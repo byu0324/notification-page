@@ -1,9 +1,160 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
 
+:root {
+  font-size: 18px;
+  --pri-red: hsl(1, 90%, 64%);
+  --pri-blue: hsl(219, 85%, 26%);
+  --neu-white: hsl(0, 0%, 100%);
+  --neu-very-gray-blue: hsl(210, 60%, 98%);
+  --neu-gray-blue-1: hsl(211, 68%, 94%);
+  --neu-gray-blue-2: hsl(205, 33%, 90%);
+  --neu-gray-blue: hsl(219, 14%, 63%);
+  --neu-dark-blue: hsl(219, 12%, 42%);
+  --neu-more-dark-blue: hsl(224, 21%, 14%);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  background-color: var(--neu-very-gray-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color:hsl(0, 0%, 100%);
+  padding: 10px 25px;
+  border-radius: 10px;
+  max-width: 50%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.num {
+  font-size: 1.2rem;
+  display: inline-block;
+  background-color: var(--pri-blue);
+  padding: 1px 11px;
+  color: var(--neu-white);
+  border-radius: 4px;
+  position: relative;
+  bottom: 3px;
+  margin-left: 6px;
+}
+
+header h2 {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color:hsl(219, 12%, 42%);
+}
+
+.massage {
+  display: flex;
+  padding: 16px;
+  border-radius: 4px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.avatar {
+  width: 50px;
+  margin-right: 16px;
+  height: 100%;
+}
+
+.massage__content {
+  line-height: 25px;
+}
+
+.noti {
+  color: var(--neu-dark-blue);
+}
+
+.name {
+  font-weight: 800;
+  color: var(--neu-more-dark-blue);
+  margin-right: 3px;
+}
+
+.hover:hover {
+  cursor: pointer;
+  color: var(--pri-blue);
+  filter: brightness(1.2);
+}
+
+.post {
+  text-decoration: none;
+  font-weight: 800;
+  color: inherit;
+  margin-left: 3px;
+}
+
+.time {
+  color: var(--neu-gray-blue)
+}
+
+.groupName {
+  text-decoration: none;
+  color: var(--pri-blue);
+  filter: brightness(1.2);
+  font-weight: 800;
+}
+
+.priMassage {
+  margin-left: 82px;
+  border: 1px solid var(--neu-gray-blue-1);
+  padding: 16px;
+  color: var(--neu-dark-blue);
+  margin-right: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.priMassage:hover {
+  background-color:var(--neu-gray-blue-1);
+}
+
+.picture {
+  width: 50px;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+.new {
+  background-color: var(--neu-very-gray-blue);
+  
+}
+
+.new .noti::after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  vertical-align: middle;
+  height: 6px;
+  background: hsl(1, 90%, 64%);
+  border-radius: 50%;
+  margin-left: 3px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
