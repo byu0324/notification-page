@@ -136,7 +136,7 @@ header h2 {
 
 .new {
   background-color: var(--neu-very-gray-blue);
-  
+  cursor: pointer;
 }
 
 .new .noti::after {
